@@ -61,6 +61,7 @@ $whywe_card_heading_color: #212528;
 $whywe_card_description_color: #828282;
 $whywe_button_text_color: #212528;
 $whywe_button_bg_color: #fad725;
+$whywe_section_bg_color: #fafafa;
 
 // About Us
 $aboutus_heading_black_color: #212528;
@@ -489,6 +490,49 @@ nav {
   }
 }
 
+// Why We
+#whywe {
+  background: $whywe_section_bg_color;
+  .whywe-heading {
+    color: $whywe_heading_black_color;
+    span {
+      color: $whywe_heading_purple_color;
+    }
+  }
+  .whywe-description {
+    color: $whywe_description_color;
+    @include sectionDescriptionFontSmall();
+  }
+  .whywe-card-container {
+    .whywe-card {
+      aspect-ratio: 7/4;
+      .whywe-card-body {
+        background: #fff;
+        border-radius: 5px;
+        .whywe-card-image {
+        }
+        .whywe-card-content {
+          h6 {
+            font-size: min(5vw, 1.5rem);
+            color: $whywe_card_heading_color;
+          }
+          p {
+            font-size: min(3vw, 1rem);
+            color: $whywe_card_description_color;
+          }
+          button {
+            width: fit-content;
+            color: $whywe_button_text_color;
+            background: $whywe_button_bg_color;
+            font-size: min(3vw, 0.85rem);
+            border-radius: 4%;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Media Queries
 @media (min-width: 768px) {
   #hero {
@@ -557,6 +601,36 @@ nav {
         }
         a {
           font-size: min(1.4vw, 0.65rem);
+        }
+      }
+    }
+  }
+  #whywe {
+    .whywe-card-container {
+      .whywe-card {
+        aspect-ratio: 2/3;
+        .whywe-card-body {
+          .whywe-card-image {
+            height: 50%;
+            overflow: hidden;
+            img {
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+          .whywe-card-content {
+            height: 50%;
+            h6 {
+              font-size: min(2.5vw, 1.2rem);
+            }
+            p {
+              font-size: min(1.5vw, 0.71rem);
+            }
+            button {
+              font-size: min(3vw, 0.85rem);
+              border-radius: 4%;
+            }
+          }
         }
       }
     }
@@ -676,13 +750,37 @@ nav {
   }
   #blog {
     .blog-card {
-      aspect-ratio: 7/5;
+      aspect-ratio: 9/7;
       .blog-card-body {
         .blog-card-description {
           font-size: min(3.3vw, 0.82rem);
         }
         a {
           font-size: min(3.2vw, 0.8rem);
+        }
+      }
+    }
+  }
+  #whywe {
+    .whywe-card-container {
+      .whywe-card {
+        aspect-ratio: 5/7;
+        .whywe-card-body {
+          .whywe-card-image {
+            height: 60%;
+          }
+          .whywe-card-content {
+            height: 40%;
+            h6 {
+              font-size: min(2.2vw, 1.6rem);
+            }
+            p {
+              font-size: min(1.4vw, 0.9rem);
+            }
+            button {
+              font-size: min(1.4vw, 0.85rem);
+            }
+          }
         }
       }
     }

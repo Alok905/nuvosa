@@ -338,6 +338,43 @@ nav div #navbarSupportedContent form button img {
   background: #fff8df !important;
 }
 
+#whywe {
+  background: #fafafa;
+}
+#whywe .whywe-heading {
+  color: #212528;
+}
+#whywe .whywe-heading span {
+  color: #6f77f1;
+}
+#whywe .whywe-description {
+  color: #828282;
+  font-size: min(4.5vw, 0.93rem);
+}
+#whywe .whywe-card-container .whywe-card {
+  aspect-ratio: 7/4;
+}
+#whywe .whywe-card-container .whywe-card .whywe-card-body {
+  background: #fff;
+  border-radius: 5px;
+}
+#whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content h6 {
+  font-size: min(5vw, 1.5rem);
+  color: #212528;
+}
+#whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content p {
+  font-size: min(3vw, 1rem);
+  color: #828282;
+}
+#whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content button {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #212528;
+  background: #fad725;
+  font-size: min(3vw, 0.85rem);
+  border-radius: 4%;
+}
+
 @media (min-width: 768px) {
   #hero > .row .hero-image {
     order: unset;
@@ -390,6 +427,32 @@ nav div #navbarSupportedContent form button img {
   }
   #blog .blog-card .blog-card-body a {
     font-size: min(1.4vw, 0.65rem);
+  }
+  #whywe .whywe-card-container .whywe-card {
+    aspect-ratio: 2/3;
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-image {
+    height: 50%;
+    overflow: hidden;
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content {
+    height: 50%;
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content h6 {
+    font-size: min(2.5vw, 1.2rem);
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content p {
+    font-size: min(1.5vw, 0.71rem);
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content button {
+    font-size: min(3vw, 0.85rem);
+    border-radius: 4%;
   }
 }
 @media (min-width: 992px) {
@@ -473,12 +536,30 @@ nav div #navbarSupportedContent form button img {
     font-size: min(1.4vw, 0.8rem);
   }
   #blog .blog-card {
-    aspect-ratio: 7/5;
+    aspect-ratio: 9/7;
   }
   #blog .blog-card .blog-card-body .blog-card-description {
     font-size: min(3.3vw, 0.82rem);
   }
   #blog .blog-card .blog-card-body a {
     font-size: min(3.2vw, 0.8rem);
+  }
+  #whywe .whywe-card-container .whywe-card {
+    aspect-ratio: 5/7;
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-image {
+    height: 60%;
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content {
+    height: 40%;
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content h6 {
+    font-size: min(2.2vw, 1.6rem);
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content p {
+    font-size: min(1.4vw, 0.9rem);
+  }
+  #whywe .whywe-card-container .whywe-card .whywe-card-body .whywe-card-content button {
+    font-size: min(1.4vw, 0.85rem);
   }
 }/*# sourceMappingURL=styles.css.map */
