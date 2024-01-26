@@ -488,6 +488,72 @@ nav div #navbarSupportedContent form button img {
   order: 1;
 }
 
+#pricing {
+  background: #fafafa;
+}
+#pricing .pricing-heading {
+  color: #212528;
+}
+#pricing .pricing-description {
+  color: #828282;
+  font-size: min(4.5vw, 0.93rem);
+}
+#pricing .pricing-card-container .pricing-card {
+  max-width: 25rem;
+  aspect-ratio: 9/7;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body {
+  border-radius: 4px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body img {
+  display: none;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body .pricing-category {
+  z-index: 2;
+  font-size: min(3.7vw, 1.1rem);
+  color: #6f77f1;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body .price {
+  z-index: 2;
+  color: #212528;
+  font-size: min(9vw, 3.5rem);
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body .price sub,
+#pricing .pricing-card-container .pricing-card .pricing-card-body .price sup {
+  font-size: min(3.5vw, 0.9rem);
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body .services {
+  z-index: 2;
+  font-size: min(3.5vw, 0.9rem);
+  color: #828282;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body button {
+  z-index: 2;
+  border: 1px solid #212528;
+  background: transparent;
+  border-radius: 2px;
+  font-size: min(3.5vw, 0.9rem);
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body:hover {
+  transform: scale(1.06);
+  background-size: cover;
+  background-position: center;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body:hover .pricing-category,
+#pricing .pricing-card-container .pricing-card .pricing-card-body:hover .price,
+#pricing .pricing-card-container .pricing-card .pricing-card-body:hover .services {
+  color: #fff !important;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body:hover button {
+  border: none;
+  background: #fad725;
+}
+#pricing .pricing-card-container .pricing-card .pricing-card-body:hover img {
+  display: block;
+}
+
 @media (min-width: 768px) {
   #hero > .row .hero-image {
     order: unset;
@@ -767,5 +833,48 @@ nav div #navbarSupportedContent form button img {
   }
   #checkspeed .checkspeed-content .checkspeed-description {
     font-size: min(4.5vw, 0.93rem);
+  }
+  #pricing {
+    background: #fafafa;
+  }
+  #pricing .pricing-heading {
+    color: #212528;
+  }
+  #pricing .pricing-description {
+    color: #828282;
+    font-size: min(4.5vw, 0.93rem);
+  }
+  #pricing .pricing-card-container {
+    margin-top: 3rem;
+  }
+  #pricing .pricing-card-container .pricing-card {
+    width: 30% !important;
+    aspect-ratio: 5/7;
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body .pricing-category {
+    font-size: min(2vw, 1.2rem);
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body .price {
+    margin-top: 1.5rem;
+    font-size: min(6vw, 3.5rem);
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body .price sub,
+  #pricing .pricing-card-container .pricing-card .pricing-card-body .price sup {
+    font-size: min(1.5vw, 1rem);
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body .services {
+    font-size: min(1.5vw, 1rem);
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body .services:first-of-type {
+    margin-top: 1.5rem;
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body .services:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body button {
+    font-size: min(1.5vw, 1rem);
+  }
+  #pricing .pricing-card-container .pricing-card .pricing-card-body:hover {
+    transform: scale(1.08);
   }
 }/*# sourceMappingURL=styles.css.map */

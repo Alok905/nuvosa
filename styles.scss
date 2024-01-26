@@ -89,6 +89,7 @@ $checkspeed_button_text_color: #212528;
 $checkspeed_button_bg_color: #fad725;
 
 // Pricing
+$pricing_bg_color: #fafafa;
 $pricing_heading_color: #212528;
 $pricing_description_color: #828282;
 $pricing_card_heading_color: #6f77f1;
@@ -97,6 +98,7 @@ $pricing_card_description_color: #828282;
 $pricing_card_button_color: #212528;
 $pricing_card_hover_button_text_color: #212528;
 $pricing_card_hover_button_bg_color: #212528;
+$pricing_card_button_hover_bg_color: #fad725;
 
 // Clients
 $clients_hading_color: #212528;
@@ -628,6 +630,7 @@ nav {
   }
 }
 
+// Check Speed
 #checkspeed {
   .checkspeed-content {
     order: 2;
@@ -643,15 +646,14 @@ nav {
     }
     form {
       max-width: 25rem;
-      .input-div {
-        input {
-          border-radius: 4px;
-          color: $checkspeed_input_text_color;
-          background: $checkspeed_input_bg_color;
-          font-size: min(3.6vw, 0.9rem);
-          border: none;
-        }
+      .input-div input {
+        border-radius: 4px;
+        color: $checkspeed_input_text_color;
+        background: $checkspeed_input_bg_color;
+        font-size: min(3.6vw, 0.9rem);
+        border: none;
       }
+
       button {
         font-size: min(3.2vw, 0.8rem);
         border: none;
@@ -666,6 +668,74 @@ nav {
   }
 }
 
+// Pricing
+#pricing {
+  background: $pricing_bg_color;
+  .pricing-heading {
+    color: $pricing_heading_color;
+  }
+  .pricing-description {
+    color: $pricing_description_color;
+    font-size: min(4.5vw, 0.93rem);
+  }
+  .pricing-card-container {
+    .pricing-card {
+      max-width: 25rem;
+      aspect-ratio: 9/7;
+      .pricing-card-body {
+        img {
+          display: none;
+        }
+        border-radius: 4px;
+        background: #fff;
+        transition: all 0.2s ease;
+        .pricing-category {
+          z-index: 2;
+          font-size: min(3.7vw, 1.1rem);
+          color: $pricing_card_heading_color;
+        }
+        .price {
+          z-index: 2;
+          color: $pricing_card_price_color;
+          font-size: min(9vw, 3.5rem);
+          sub,
+          sup {
+            font-size: min(3.5vw, 0.9rem);
+          }
+        }
+        .services {
+          z-index: 2;
+          font-size: min(3.5vw, 0.9rem);
+          color: $pricing_card_description_color;
+        }
+        button {
+          z-index: 2;
+          border: 1px solid $pricing_card_button_color;
+          background: transparent;
+          border-radius: 2px;
+          font-size: min(3.5vw, 0.9rem);
+        }
+        &:hover {
+          transform: scale(1.06);
+          background-size: cover;
+          background-position: center;
+          .pricing-category,
+          .price,
+          .services {
+            color: #fff !important;
+          }
+          button {
+            border: none;
+            background: $pricing_card_button_hover_bg_color;
+          }
+          img {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
 // Media Queries
 @media (min-width: 768px) {
   #hero {
@@ -834,9 +904,6 @@ nav {
   #checkspeed {
     .checkspeed-content {
       order: unset;
-      .checkspeed-heading {
-        // font-size: min(3vw, 1.5rem);
-      }
       .checkspeed-description {
         font-size: min(1.8vw, 0.85rem);
       }
@@ -1035,19 +1102,50 @@ nav {
       }
     }
   }
-  #checkspeed {
-    .checkspeed-content {
-      .checkspeed-heading {
-        // font-size: min(3vw, 1.5rem);
-      }
-      .checkspeed-description {
-        font-size: min(4.5vw, 0.93rem);
-      }
-      form {
-        .input-div {
-          input {
-            &:last-of-type {
+  #checkspeed .checkspeed-content .checkspeed-description {
+    font-size: min(4.5vw, 0.93rem);
+  }
+
+  #pricing {
+    background: $pricing_bg_color;
+    .pricing-heading {
+      color: $pricing_heading_color;
+    }
+    .pricing-description {
+      color: $pricing_description_color;
+      font-size: min(4.5vw, 0.93rem);
+    }
+    .pricing-card-container {
+      margin-top: 3rem;
+      .pricing-card {
+        width: 30% !important;
+        aspect-ratio: 5/7;
+        .pricing-card-body {
+          .pricing-category {
+            font-size: min(2vw, 1.2rem);
+          }
+          .price {
+            margin-top: 1.5rem;
+            font-size: min(6vw, 3.5rem);
+            sub,
+            sup {
+              font-size: min(1.5vw, 1rem);
             }
+          }
+          .services {
+            font-size: min(1.5vw, 1rem);
+            &:first-of-type {
+              margin-top: 1.5rem;
+            }
+            &:last-of-type {
+              margin-bottom: 1.5rem;
+            }
+          }
+          button {
+            font-size: min(1.5vw, 1rem);
+          }
+          &:hover {
+            transform: scale(1.08);
           }
         }
       }
