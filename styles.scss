@@ -122,6 +122,7 @@ $copyright_border_color: #eae5e5;
   box-sizing: border-box;
   outline: none;
   font-family: $font_poppins;
+  user-select: none;
 }
 body {
   font-size: 62.5%;

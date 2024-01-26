@@ -5,6 +5,9 @@
   box-sizing: border-box;
   outline: none;
   font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body {
