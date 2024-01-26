@@ -28,6 +28,8 @@ nav div > a span {
 }
 nav div #navbarSupportedContent {
   z-index: 2;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
 }
 nav div #navbarSupportedContent ul li span {
   display: none;
@@ -43,6 +45,22 @@ nav div #navbarSupportedContent form button img {
   height: 2rem;
 }
 
+@keyframes rotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotatePlus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 #hero > .row .hero-image {
   order: 1;
   aspect-ratio: 1/1;
@@ -96,10 +114,17 @@ nav div #navbarSupportedContent form button img {
   background-repeat: no-repeat;
 }
 #hero > .row .hero-image .hero-creative-team-card .creative-team .creative-team-member:nth-child(5) .team-member-image-container {
-  background: url("./images/hero/hero_member_plus.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #dcddff;
+  border: 0.79px dashed #6f77f1;
+  animation: rotateAnimation 10s linear infinite;
+}
+#hero > .row .hero-image .hero-creative-team-card .creative-team .creative-team-member:nth-child(5) .team-member-image-container:hover {
+  cursor: pointer;
+}
+#hero > .row .hero-image .hero-creative-team-card .creative-team .creative-team-member:nth-child(5) .team-member-image-container img {
+  animation: rotatePlus 10s linear infinite;
+  height: 50%;
+  width: 50%;
 }
 #hero > .row .hero-content {
   order: 2;
@@ -179,6 +204,14 @@ nav div #navbarSupportedContent form button img {
   margin-right: 5%;
 }
 
+#optimise .bg-circle {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  background: #f5fdff;
+}
 #optimise .optimise-heading {
   color: #212528;
 }

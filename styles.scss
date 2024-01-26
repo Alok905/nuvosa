@@ -10,6 +10,8 @@ $nav_text_color: #212528;
 $logo_dot_color: #bc424e;
 $nav_link_underline_color: #6f77f1;
 $nav_search_button_bg_color: #fad725;
+$nav_creative_team_plus_stroke_color: #6f77f1;
+$nav_creative_team_plus_bg_color: #dcddff;
 
 // Hero
 $hero_text_color: #212528;
@@ -145,6 +147,7 @@ nav {
     }
     #navbarSupportedContent {
       z-index: 2;
+      backdrop-filter: blur(100px);
       ul li span {
         display: none;
       }
@@ -163,8 +166,24 @@ nav {
     }
   }
 }
-
 // Hero
+
+@keyframes rotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotatePlus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 #hero {
   > .row {
     // max-width: 530px;
@@ -209,7 +228,17 @@ nav {
               @include setBackground("./images/hero/hero_member_4.svg");
             }
             &:nth-child(5) .team-member-image-container {
-              @include setBackground("./images/hero/hero_member_plus.svg");
+              background: $nav_creative_team_plus_bg_color;
+              border: 0.79px dashed $nav_creative_team_plus_stroke_color;
+              animation: rotateAnimation 10s linear infinite;
+              &:hover {
+                cursor: pointer;
+              }
+              img {
+                animation: rotatePlus 10s linear infinite;
+                height: 50%;
+                width: 50%;
+              }
             }
           }
         }
@@ -307,6 +336,14 @@ nav {
 
 // Optimise
 #optimise {
+  .bg-circle {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    background: $optimise_bg_circle_color;
+  }
   .optimise-heading {
     color: $optimize_heading_black_color;
     span {
