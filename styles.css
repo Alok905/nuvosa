@@ -277,6 +277,30 @@ nav div #navbarSupportedContent form button img {
   background: #f2f3fa;
 }
 
+#solution .solution-content {
+  order: 2;
+}
+#solution .solution-content .solution-content-heading {
+  color: #212528;
+}
+#solution .solution-content .solution-content-heading span {
+  color: #6f77f1;
+}
+#solution .solution-content .solution-content-description {
+  color: #828282;
+  font-size: min(4.5vw, 0.93rem);
+}
+#solution .solution-content .btn-get-started {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fad725;
+  color: #212528;
+  border-radius: 3px;
+}
+#solution .solution-image {
+  order: 1;
+}
+
 @media (min-width: 768px) {
   #hero > .row .hero-image {
     order: unset;
@@ -308,6 +332,15 @@ nav div #navbarSupportedContent form button img {
   }
   #projects .project-card .project-card-body .project-card-description {
     font-size: min(3.2vw, 0.54rem);
+  }
+  #solution .solution-content {
+    order: unset;
+  }
+  #solution .solution-content .solution-content-description {
+    font-size: min(4vw, 0.65rem);
+  }
+  #solution .solution-image {
+    order: unset;
   }
 }
 @media (min-width: 992px) {
@@ -383,5 +416,8 @@ nav div #navbarSupportedContent form button img {
   }
   #optimise .optimise-card-container .optimise-card .optimise-card-body .optimise-card-text .optimise-card-description {
     font-size: min(0.95vw, 0.9rem);
+  }
+  #solution .solution-content .solution-content-description {
+    font-size: min(4.5vw, 0.93rem);
   }
 }/*# sourceMappingURL=styles.css.map */

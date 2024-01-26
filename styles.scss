@@ -130,6 +130,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+@mixin sectionDescriptionFontSmall {
+  font-size: min(4.5vw, 0.93rem);
+}
+@mixin sectionDescriptionFontLarge {
+  font-size: min(4.5vw, 0.93rem);
+}
 // Nav
 nav {
   height: 4rem;
@@ -412,6 +418,32 @@ nav {
   }
 }
 
+// Solution
+#solution {
+  .solution-content {
+    order: 2;
+    .solution-content-heading {
+      color: $solution_heading_black_color;
+      span {
+        color: $solution_heading_purple_color;
+      }
+    }
+    .solution-content-description {
+      color: $solution_description_color;
+      @include sectionDescriptionFontLarge();
+    }
+    .btn-get-started {
+      width: fit-content;
+      background: $solution_button_bg_color;
+      color: $solution_button_text_color;
+      border-radius: 3px;
+    }
+  }
+  .solution-image {
+    order: 1;
+  }
+}
+
 // Media Queries
 @media (min-width: 768px) {
   #hero {
@@ -455,6 +487,17 @@ nav {
           font-size: min(3.2vw, 0.54rem);
         }
       }
+    }
+  }
+  #solution {
+    .solution-content {
+      order: unset;
+      .solution-content-description {
+        font-size: min(4vw, 0.65rem);
+      }
+    }
+    .solution-image {
+      order: unset;
     }
   }
 }
@@ -557,6 +600,13 @@ nav {
             }
           }
         }
+      }
+    }
+  }
+  #solution {
+    .solution-content {
+      .solution-content-description {
+        @include sectionDescriptionFontLarge();
       }
     }
   }
