@@ -74,6 +74,10 @@ $aboutus_numbers_description_color: #6f6f6f;
 $aboutus_number_red_dot_color: #d1563b;
 $aboutus_number_green_dot_color: #3bd165;
 $aboutus_number_yellow_dot_color: #f7c745;
+$aboutus_card1_bg_color: #f9e4dc;
+$aboutus_card2_bg_color: #d6f0d2;
+$aboutus_card3_bg_color: #fef5d4;
+$aboutus_numbers_border_color: #e1e1e1;
 
 // Check Speed
 $checkspeed_heading_black_color: #212528;
@@ -533,6 +537,100 @@ nav {
   }
 }
 
+// About Us
+#about {
+  .about-content {
+    .about-content-heading {
+      color: $aboutus_heading_black_color;
+      span {
+        color: $aboutus_heading_purple_color;
+      }
+    }
+    .about-content-description {
+      color: $aboutus_description_color;
+      @include sectionDescriptionFontSmall();
+    }
+    .about-content-card-container {
+      .about-card {
+        aspect-ratio: 2/1;
+        max-width: 22rem;
+        .about-card-body {
+          border-radius: 3px;
+          box-shadow: -2px 12px 10px #aaa, 1px 6px 10px #aaa;
+          .about-card-image {
+            .image-container {
+              aspect-ratio: 1/1;
+              border-radius: 50%;
+              background: $aboutus_card1_bg_color;
+              img {
+                width: 50%;
+                aspect-ratio: 1/1;
+              }
+            }
+          }
+          .about-card-content {
+            h5 {
+              color: $aboutus_card_heading_color;
+              font-size: min(5vw, 1.1rem);
+            }
+            p {
+              color: $aboutus_card_description_color;
+              font-size: min(3.6vw, 0.8rem);
+            }
+          }
+        }
+        @media (min-width: 576px) {
+          &:nth-last-of-type(1),
+          &:nth-last-of-type(2) {
+            height: 10rem;
+          }
+          &:nth-of-type(3) {
+            height: 7rem;
+            max-width: 100%;
+            .about-card-image .image-container {
+              height: 70%;
+              width: unset !important;
+              aspect-ratio: 1/1;
+            }
+            .about-card-content {
+              h5 {
+                font-size: 1rem;
+              }
+              p {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(2) .image-container {
+          background: $aboutus_card2_bg_color !important;
+        }
+        &:nth-of-type(3) .image-container {
+          background: $aboutus_card3_bg_color !important;
+        }
+      }
+    }
+  }
+  .achivements-container {
+    border-collapse: collapse;
+    .numbers {
+      aspect-ratio: 1/1;
+      .numbers-body {
+        border: 2px solid $aboutus_numbers_border_color;
+        h2 {
+          color: $aboutus_numbers_color;
+          font-size: min(10vw);
+        }
+        p {
+          color: $aboutus_numbers_description_color;
+          font-size: min(2.2vw);
+        }
+      }
+    }
+  }
+}
+
 // Media Queries
 @media (min-width: 768px) {
   #hero {
@@ -631,6 +729,69 @@ nav {
               border-radius: 4%;
             }
           }
+        }
+      }
+    }
+  }
+  #about {
+    .about-content {
+      .about-content-heading {
+        font-size: min(3vw, 1.5rem);
+      }
+      .about-content-description {
+        font-size: min(1.8vw, 0.85rem);
+      }
+      .about-content-card-container {
+        .about-card {
+          aspect-ratio: 7/3;
+          height: unset !important;
+          max-width: unset !important;
+          .about-card-body {
+            .about-card-image {
+              .image-container {
+                height: unset !important;
+                width: 100% !important;
+              }
+            }
+            .about-card-content {
+              h5 {
+                font-size: 1rem;
+              }
+              p {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .achivements-container {
+      border: 1px solid $aboutus_numbers_border_color;
+      box-sizing: content-box;
+      .numbers {
+        aspect-ratio: 1/1;
+        .numbers-body {
+          border: none;
+          h2 {
+            font-size: min(8vw, 3rem);
+          }
+          p {
+            font-size: min(1.2vw, 0.8rem);
+          }
+        }
+      }
+      span {
+        .circle {
+          height: 13px;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          background: $aboutus_number_red_dot_color;
+        }
+        &:nth-of-type(2) .circle {
+          background: $aboutus_number_green_dot_color;
+        }
+        &:nth-of-type(3) .circle {
+          background: $aboutus_number_yellow_dot_color;
         }
       }
     }
@@ -779,6 +940,31 @@ nav {
             }
             button {
               font-size: min(1.4vw, 0.85rem);
+            }
+          }
+        }
+      }
+    }
+  }
+  #about {
+    .about-content {
+      .about-content-heading {
+        font-size: min(3.2vw, 2.1rem);
+      }
+      .about-content-description {
+        @include sectionDescriptionFontLarge();
+      }
+      .about-content-card-container {
+        .about-card {
+          aspect-ratio: 7/2;
+          .about-card-body {
+            .about-card-content {
+              h5 {
+                font-size: min(1.5vw, 1.7rem);
+              }
+              p {
+                font-size: min(1.1vw, 1.1rem);
+              }
             }
           }
         }
