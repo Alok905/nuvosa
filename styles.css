@@ -290,7 +290,7 @@ nav div #navbarSupportedContent form button img {
   color: #828282;
   font-size: min(4.5vw, 0.93rem);
 }
-#solution .solution-content .btn-get-started {
+#solution .solution-content .btn-learn-more {
   width: -moz-fit-content;
   width: fit-content;
   background: #fad725;
@@ -299,6 +299,40 @@ nav div #navbarSupportedContent form button img {
 }
 #solution .solution-image {
   order: 1;
+}
+
+#blog .blog-card {
+  aspect-ratio: 7/5;
+  max-width: 22rem;
+}
+#blog .blog-card .blog-card-body {
+  border-radius: 3px;
+}
+#blog .blog-card .blog-card-body:hover {
+  box-shadow: 2px 6px 10px #aaa, -2px 6px 10px #aaa, 0 -30px 10px #fff;
+}
+#blog .blog-card .blog-card-body .blog-card-image {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 25%;
+  background: #ffe8df;
+}
+#blog .blog-card .blog-card-body .blog-card-heading {
+  color: #212528;
+}
+#blog .blog-card .blog-card-body .blog-card-description {
+  font-size: min(3.3vw, 0.82rem);
+  color: #828282;
+}
+#blog .blog-card .blog-card-body a {
+  font-size: min(3.2vw, 0.8rem);
+  color: #6f77f1;
+}
+#blog .blog-card:nth-of-type(2) .blog-card-image {
+  background: #e3ffdf !important;
+}
+#blog .blog-card:nth-of-type(3) .blog-card-image {
+  background: #fff8df !important;
 }
 
 @media (min-width: 768px) {
@@ -339,8 +373,20 @@ nav div #navbarSupportedContent form button img {
   #solution .solution-content .solution-content-description {
     font-size: min(4vw, 0.65rem);
   }
+  #solution .solution-content .btn-learn-more {
+    font-size: min(3.5vw, 0.6rem);
+  }
   #solution .solution-image {
     order: unset;
+  }
+  #blog .blog-card {
+    aspect-ratio: 7/8;
+  }
+  #blog .blog-card .blog-card-body .blog-card-description {
+    font-size: min(1.5vw, 0.7rem);
+  }
+  #blog .blog-card .blog-card-body a {
+    font-size: min(1.4vw, 0.65rem);
   }
 }
 @media (min-width: 992px) {
@@ -419,5 +465,17 @@ nav div #navbarSupportedContent form button img {
   }
   #solution .solution-content .solution-content-description {
     font-size: min(4.5vw, 0.93rem);
+  }
+  #solution .solution-content .btn-learn-more {
+    font-size: min(1.4vw, 0.8rem);
+  }
+  #blog .blog-card {
+    aspect-ratio: 7/5;
+  }
+  #blog .blog-card .blog-card-body .blog-card-description {
+    font-size: min(3.3vw, 0.82rem);
+  }
+  #blog .blog-card .blog-card-body a {
+    font-size: min(3.2vw, 0.8rem);
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -48,7 +48,10 @@ $solution_button_text_color: #212528;
 // Blog
 $blog_card_heading_color: #212528;
 $blog_card_description_color: #828282;
-$blog_card_readmore_color: #828282;
+$blog_card_readmore_color: #6f77f1;
+$blog_card_icon1_bg_color: #ffe8df;
+$blog_card_icon2_bg_color: #e3ffdf;
+$blog_card_icon3_bg_color: #fff8df;
 
 // Why we
 $whywe_heading_black_color: #212528;
@@ -430,17 +433,58 @@ nav {
     }
     .solution-content-description {
       color: $solution_description_color;
-      @include sectionDescriptionFontLarge();
+      @include sectionDescriptionFontSmall();
     }
-    .btn-get-started {
+    .btn-learn-more {
       width: fit-content;
       background: $solution_button_bg_color;
       color: $solution_button_text_color;
       border-radius: 3px;
+      // @include sectionDescriptionFontLarge();
     }
   }
   .solution-image {
     order: 1;
+  }
+}
+
+// Blog
+#blog {
+  .blog-card {
+    aspect-ratio: 7/5;
+    max-width: 22rem;
+    .blog-card-body {
+      border-radius: 3px;
+      &:hover {
+        box-shadow: 2px 6px 10px #aaa, -2px 6px 10px #aaa, 0 -30px 10px #fff;
+      }
+      .blog-card-image {
+        width: fit-content;
+        border-radius: 25%;
+        background: $blog_card_icon1_bg_color;
+      }
+      .blog-card-heading {
+        color: $blog_card_heading_color;
+      }
+      .blog-card-description {
+        font-size: min(3.3vw, 0.82rem);
+        color: $blog_card_description_color;
+      }
+      a {
+        font-size: min(3.2vw, 0.8rem);
+        color: $blog_card_readmore_color;
+      }
+    }
+    &:nth-of-type(2) {
+      .blog-card-image {
+        background: $blog_card_icon2_bg_color !important;
+      }
+    }
+    &:nth-of-type(3) {
+      .blog-card-image {
+        background: $blog_card_icon3_bg_color !important;
+      }
+    }
   }
 }
 
@@ -495,9 +539,25 @@ nav {
       .solution-content-description {
         font-size: min(4vw, 0.65rem);
       }
+      .btn-learn-more {
+        font-size: min(3.5vw, 0.6rem);
+      }
     }
     .solution-image {
       order: unset;
+    }
+  }
+  #blog {
+    .blog-card {
+      aspect-ratio: 7/8;
+      .blog-card-body {
+        .blog-card-description {
+          font-size: min(1.5vw, 0.7rem);
+        }
+        a {
+          font-size: min(1.4vw, 0.65rem);
+        }
+      }
     }
   }
 }
@@ -607,6 +667,22 @@ nav {
     .solution-content {
       .solution-content-description {
         @include sectionDescriptionFontLarge();
+      }
+      .btn-learn-more {
+        font-size: min(1.4vw, 0.8rem);
+      }
+    }
+  }
+  #blog {
+    .blog-card {
+      aspect-ratio: 7/5;
+      .blog-card-body {
+        .blog-card-description {
+          font-size: min(3.3vw, 0.82rem);
+        }
+        a {
+          font-size: min(3.2vw, 0.8rem);
+        }
       }
     }
   }
