@@ -556,7 +556,6 @@ nav {
         max-width: 22rem;
         .about-card-body {
           border-radius: 3px;
-          box-shadow: -2px 12px 10px #aaa, 1px 6px 10px #aaa;
           .about-card-image {
             .image-container {
               aspect-ratio: 1/1;
@@ -578,8 +577,15 @@ nav {
               font-size: min(3.6vw, 0.8rem);
             }
           }
+          &:hover {
+            border: none;
+            box-shadow: -2px 12px 10px #aaa, 1px 6px 10px #aaa;
+          }
         }
         @media (min-width: 576px) {
+          .about-card-body {
+            border: 1px solid $aboutus_numbers_border_color;
+          }
           &:nth-last-of-type(1),
           &:nth-last-of-type(2) {
             height: 10rem;
@@ -747,6 +753,7 @@ nav {
           height: unset !important;
           max-width: unset !important;
           .about-card-body {
+            border: none;
             .about-card-image {
               .image-container {
                 height: unset !important;
@@ -767,7 +774,6 @@ nav {
     }
     .achivements-container {
       border: 1px solid $aboutus_numbers_border_color;
-      box-sizing: content-box;
       .numbers {
         aspect-ratio: 1/1;
         .numbers-body {
@@ -776,7 +782,7 @@ nav {
             font-size: min(8vw, 3rem);
           }
           p {
-            font-size: min(1.2vw, 0.8rem);
+            font-size: min(1.2vw, 0.7rem);
           }
         }
       }

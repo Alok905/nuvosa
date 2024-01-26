@@ -391,7 +391,6 @@ nav div #navbarSupportedContent form button img {
 }
 #about .about-content .about-content-card-container .about-card .about-card-body {
   border-radius: 3px;
-  box-shadow: -2px 12px 10px #aaa, 1px 6px 10px #aaa;
 }
 #about .about-content .about-content-card-container .about-card .about-card-body .about-card-image .image-container {
   aspect-ratio: 1/1;
@@ -410,7 +409,14 @@ nav div #navbarSupportedContent form button img {
   color: #828282;
   font-size: min(3.6vw, 0.8rem);
 }
+#about .about-content .about-content-card-container .about-card .about-card-body:hover {
+  border: none;
+  box-shadow: -2px 12px 10px #aaa, 1px 6px 10px #aaa;
+}
 @media (min-width: 576px) {
+  #about .about-content .about-content-card-container .about-card .about-card-body {
+    border: 1px solid #e1e1e1;
+  }
   #about .about-content .about-content-card-container .about-card:nth-last-of-type(1), #about .about-content .about-content-card-container .about-card:nth-last-of-type(2) {
     height: 10rem;
   }
@@ -544,6 +550,9 @@ nav div #navbarSupportedContent form button img {
     height: unset !important;
     max-width: unset !important;
   }
+  #about .about-content .about-content-card-container .about-card .about-card-body {
+    border: none;
+  }
   #about .about-content .about-content-card-container .about-card .about-card-body .about-card-image .image-container {
     height: unset !important;
     width: 100% !important;
@@ -556,7 +565,6 @@ nav div #navbarSupportedContent form button img {
   }
   #about .achivements-container {
     border: 1px solid #e1e1e1;
-    box-sizing: content-box;
   }
   #about .achivements-container .numbers {
     aspect-ratio: 1/1;
@@ -568,7 +576,7 @@ nav div #navbarSupportedContent form button img {
     font-size: min(8vw, 3rem);
   }
   #about .achivements-container .numbers .numbers-body p {
-    font-size: min(1.2vw, 0.8rem);
+    font-size: min(1.2vw, 0.7rem);
   }
   #about .achivements-container span .circle {
     height: 13px;
