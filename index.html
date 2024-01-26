@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar container navbar-expand-lg">
+      <div class="container-fluid h-100">
+        <a
+          class="navbar-brand fs-3 rounded-5 me-0 position-relative fw-semibold"
+          href="#"
+          >nuvosa
+          <span class="d-inline-block rounded-5 position-absolute top-50"></span
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-white"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+            <li class="nav-item position-relative">
+              <a class="nav-link active fs-5" aria-current="page" href="#"
+                >Home</a
+              >
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link fs-5" aria-current="page" href="#">Projects</a>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link fs-5" aria-current="page" href="#">Blog</a>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link fs-5" aria-current="page" href="#">Pricing</a>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link fs-5" aria-current="page" href="#">Contact</a>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+              <span class="d-none d-lg-inline-block position-absolute-0"></span>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 fs-5 fw-semibold"
+              type="search"
+              placeholder="Let's talk"
+              aria-label="Search"
+            />
+            <button
+              class="btn d-flex align-items-center justify-content-center h-100"
+              type="submit"
+            >
+              <img
+                src="./images/navbar/nav_Search_icon.svg"
+                alt="search icon"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="container py-3 py-lg-5">
+      <div class="row m-0 mx-auto">
+        <div
+          class="hero-content col-12 col-md-6 py-5 py-md-0 d-flex flex-column justify-content-center gap-4 gap-md-4 gap-lg-5"
+        >
+          <h1 class="fw-bold m-0">
+            Increase your web <br />
+            traffic with our
+            <span
+              class="fw-semibold position-relative d-inline-block px-2 py-1"
+            >
+              expert
+              <span class="expert-dot d-inline-block-0 rounded-5"></span
+              ><span class="expert-dot d-inline-block-0 rounded-5"></span
+              ><span class="expert-dot d-inline-block-0 rounded-5"></span
+              ><span class="expert-dot d-inline-block-0 rounded-5"></span>
+            </span>
+          </h1>
+          <p class="hero-description m-0 p-0">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when It is a long .It is a long
+            established fact that a reader will be distracted by the readable
+            content of a is simply. It is a long established fact that a reader
+            will be distracted.
+          </p>
+          <div
+            class="hero-button-group p-0 d-flex align-items-center justify-content-between justify-content-sm-start gap-sm-5"
+          >
+            <button
+              class="btn-get-started h-100 py-1 px-3 py-md-2 px-md-4-0 fw-medium border-0"
+            >
+              Get Started
+            </button>
+            <a
+              class="youtube-group position-relative d-flex align-items-center justify-content-around gap-2 text-decoration-none"
+            >
+              <img
+                src="./images/hero/youtube_green.svg"
+                alt="green youtube icon"
+                class="h-25"
+              />
+              <span>Take a tour</span>
+              <img
+                src="./images/hero/take_a_tour.svg"
+                alt="take a tour round image"
+                class="position-absolute"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="hero-image col-12 col-md-6 position-relative">
+          <img
+            src="./images/hero/girl_wo_team.png"
+            alt="a smiling girl"
+            class="w-100 object-fit-cover"
+          />
+          <div
+            class="hero-creative-team-card d-flex flex-column justify-content-center gap-2 px-3 mx-auto mx-md-0"
+          >
+            <h2 class="fs-6 m-0">Our Creative Team</h2>
+            <div
+              class="creative-team position-relative h-50 d-flex align-items-center justify-content-between"
+            >
+              <div class="creative-team-member flex-grow-1 position-relative">
+                <div
+                  class="team-member-image-container position-absolute"
+                ></div>
+              </div>
+              <div class="creative-team-member flex-grow-1 position-relative">
+                <div
+                  class="team-member-image-container position-absolute"
+                ></div>
+              </div>
+              <div class="creative-team-member flex-grow-1 position-relative">
+                <div
+                  class="team-member-image-container position-absolute"
+                ></div>
+              </div>
+              <div class="creative-team-member flex-grow-1 position-relative">
+                <div
+                  class="team-member-image-container position-absolute"
+                ></div>
+              </div>
+              <div class="creative-team-member flex-grow-1 position-relative">
+                <div
+                  class="team-member-image-container position-absolute"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container py-3 py-lg-5">
+      <div class="row m-0 p-0">
+        <div class="project-card col-12 col-md-4 p-2 p-sm-1 p-lg-2 mx-auto">
+          <div class="project-card-body row m-0 p-1 h-100 w-100">
+            <div
+              class="project-card-image col-4 p-0 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./images/projects/social_media_marketing.svg"
+                alt="Social Media Management"
+                class="w-75 object-fit-cover"
+              />
+            </div>
+            <h3 class="col-8 m-0 d-flex align-items-center p-0">
+              Social Media <br />
+              Management
+            </h3>
+            <p class="project-card-description col-12 m-0">
+              It is a long established fact that a reader will be distracted by
+              the readable content .It is a long established fact that .
+            </p>
+            <a href="#" class="col-1 d-inline-block p-0 ms-auto"
+              ><img
+                src="./images/icons/arrow-right.svg"
+                alt="right arrow icon"
+                class="w-100"
+            /></a>
+          </div>
+        </div>
+        <div class="project-card mx-auto col-12 col-md-4 p-2 p-sm-1 p-lg-2">
+          <div class="project-card-body row m-0 p-1 h-100 w-100">
+            <div
+              class="project-card-image col-4 p-0 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./images/projects/email_marketing.svg"
+                alt="Social Media Management"
+                class="w-75 object-fit-cover"
+              />
+            </div>
+            <h3 class="col-8 m-0 d-flex align-items-center p-0">
+              Email <br />
+              Marketing
+            </h3>
+            <p class="project-card-description col-12 m-0">
+              It is a long established fact that a reader will be distracted by
+              the readable content .It is a long established fact that .
+            </p>
+            <a href="#" class="col-1 d-inline-block ms-auto p-0"
+              ><img
+                src="./images/icons/arrow-right.svg"
+                alt="right arrow icon"
+                class="w-100"
+            /></a>
+          </div>
+        </div>
+        <div class="project-card mx-auto col-12 col-md-4 p-2 p-sm-1 p-lg-2">
+          <div class="project-card-body row m-0 p-1 h-100 w-100">
+            <div
+              class="project-card-image col-4 p-0 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./images/projects/seo_management.svg"
+                alt="Social Media Management"
+                class="w-75"
+              />
+            </div>
+            <h3 class="col-8 m-0 d-flex align-items-center p-0">
+              SEO <br />
+              Management
+            </h3>
+            <p class="project-card-description col-12 m-0">
+              It is a long established fact that a reader will be distracted by
+              the readable content .It is a long established fact that a reader
+              .
+            </p>
+            <a href="#" class="col-1 d-inline-block ms-auto p-0"
+              ><img
+                src="./images/icons/arrow-right.svg"
+                alt="right arrow icon"
+                class="w-100"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optimise -->
+    <section id="optimise" class="container py-3 py-lg-5">
+      <div class="row m-0 p-0 gap-3">
+        <h2 class="optimise-heading m-0 col-12 fw-medium">
+          Optimising your <span class="fw-medium">Website</span>
+        </h2>
+        <p class="optimise-description m-0 col-12 fw-normal">
+          It is a long established fact that a reader will be distracted by the
+          readable content <br class="d-none d-md-block" />
+          of a page when It is a long .
+        </p>
+        <div class="optimise-card-container row m-0 p-0">
+          <span class="bg-circle p-4 bg-danger d-none"></span>
+          <div
+            class="optimise-card col-12 col-md-6 col-lg-3 p-2 p-md-4 p-lg-3 mx-auto"
+          >
+            <div
+              class="optimise-card-body w-100 h-100 p-4 d-flex flex-column gap-5 position-relative gap-lg-5"
+            >
+              <h3 class="bg-text m-0 position-absolute">1</h3>
+              <div class="image-circle position-relative">
+                <img
+                  src="./images/optimise/keywords.svg"
+                  alt="Keyword Research Image"
+                  class="position-absolute"
+                />
+              </div>
+              <div
+                class="optimise-card-text flex-grow-1 d-flex flex-column gap-2 justify-content-center"
+              >
+                <h4 class="optimise-card-heading fw-medium m-0">
+                  Keyword Research
+                </h4>
+                <p class="optimise-card-description m-0 fw-normal">
+                  It is a long established fact that a reader will be distracted
+                  by the It is a long established .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="optimise-card col-12 col-md-6 col-lg-3 p-2 p-md-4 p-lg-3 mx-auto"
+          >
+            <div
+              class="optimise-card-body w-100 h-100 p-4 d-flex flex-column gap-5 position-relative"
+            >
+              <h3 class="bg-text m-0 position-absolute">2</h3>
+              <div class="image-circle position-relative">
+                <img
+                  src="./images/optimise/content_management.svg"
+                  alt="Keyword Research Image"
+                  class="position-absolute"
+                />
+              </div>
+              <div
+                class="optimise-card-text flex-grow-1 d-flex flex-column gap-2 justify-content-center"
+              >
+                <h4 class="optimise-card-heading fw-medium m-0">
+                  content Optimisation
+                </h4>
+                <p class="optimise-card-description m-0 fw-normal">
+                  It is a long established fact that a reader will be distracted
+                  by the It is a long established .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="optimise-card col-12 col-md-6 col-lg-3 p-2 p-md-4 p-lg-3 mx-auto"
+          >
+            <div
+              class="optimise-card-body w-100 h-100 p-4 d-flex flex-column gap-5 position-relative"
+            >
+              <h3 class="bg-text m-0 position-absolute">3</h3>
+              <div class="image-circle position-relative">
+                <img
+                  src="./images/optimise/target_analysis.svg"
+                  alt="Keyword Research Image"
+                  class="position-absolute"
+                />
+              </div>
+              <div
+                class="optimise-card-text flex-grow-1 d-flex flex-column gap-2 justify-content-center"
+              >
+                <h4 class="optimise-card-heading fw-medium m-0">
+                  Target Analysis
+                </h4>
+                <p class="optimise-card-description m-0 fw-normal">
+                  It is a long established fact that a reader will be distracted
+                  by the It is a long established .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="optimise-card col-12 col-md-6 col-lg-3 p-2 p-md-4 p-lg-3 mx-auto"
+          >
+            <div
+              class="optimise-card-body w-100 h-100 p-4 d-flex flex-column gap-5 position-relative"
+            >
+              <h3 class="bg-text m-0 position-absolute">4</h3>
+              <div class="image-circle position-relative">
+                <img
+                  src="./images/optimise/continuous_testing.svg"
+                  alt="Keyword Research Image"
+                  class="position-absolute"
+                />
+              </div>
+              <div
+                class="optimise-card-text flex-grow-1 d-flex flex-column gap-2 justify-content-center"
+              >
+                <h4 class="optimise-card-heading fw-medium m-0">
+                  Continuous Testing
+                </h4>
+                <p class="optimise-card-description m-0 fw-normal">
+                  It is a long established fact that a reader will be distracted
+                  by the It is a long established .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
