@@ -454,6 +454,40 @@ nav div #navbarSupportedContent form button img {
   font-size: 2.2vw;
 }
 
+#checkspeed .checkspeed-content {
+  order: 2;
+}
+#checkspeed .checkspeed-content .checkspeed-heading {
+  color: #212528;
+}
+#checkspeed .checkspeed-content .checkspeed-heading span {
+  color: #6f77f1;
+}
+#checkspeed .checkspeed-content .checkspeed-description {
+  color: #828282;
+  font-size: min(4.5vw, 0.93rem);
+}
+#checkspeed .checkspeed-content form {
+  max-width: 25rem;
+}
+#checkspeed .checkspeed-content form .input-div input {
+  border-radius: 4px;
+  color: #b6b6b6;
+  background: #dfdfdf;
+  font-size: min(3.6vw, 0.9rem);
+  border: none;
+}
+#checkspeed .checkspeed-content form button {
+  font-size: min(3.2vw, 0.8rem);
+  border: none;
+  background: #fad725;
+  color: #212528;
+  border-radius: 4px;
+}
+#checkspeed .checkspeed-image {
+  order: 1;
+}
+
 @media (min-width: 768px) {
   #hero > .row .hero-image {
     order: unset;
@@ -584,6 +618,30 @@ nav div #navbarSupportedContent form button img {
   #about .achivements-container span:nth-of-type(3) .circle {
     background: #f7c745;
   }
+  #checkspeed .checkspeed-content {
+    order: unset;
+  }
+  #checkspeed .checkspeed-content .checkspeed-description {
+    font-size: min(1.8vw, 0.85rem);
+  }
+  #checkspeed .checkspeed-content form {
+    max-width: 100%;
+  }
+  #checkspeed .checkspeed-content form .input-div {
+    overflow: hidden;
+  }
+  #checkspeed .checkspeed-content form .input-div input {
+    border-right: 0.1px solid #b6b6b6;
+    border-radius: 4px 0 0 4px;
+  }
+  #checkspeed .checkspeed-content form .input-div input:last-of-type {
+    border-right: none;
+    border-left: 0.1px solid #b6b6b6;
+    border-radius: 0 4px 4px 0;
+  }
+  #checkspeed .checkspeed-image {
+    order: unset;
+  }
 }
 @media (min-width: 992px) {
   nav div {
@@ -706,5 +764,8 @@ nav div #navbarSupportedContent form button img {
   }
   #about .about-content .about-content-card-container .about-card .about-card-body .about-card-content p {
     font-size: min(1.1vw, 1.1rem);
+  }
+  #checkspeed .checkspeed-content .checkspeed-description {
+    font-size: min(4.5vw, 0.93rem);
   }
 }/*# sourceMappingURL=styles.css.map */

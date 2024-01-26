@@ -85,8 +85,8 @@ $checkspeed_heading_purple_color: #6f77f1;
 $checkspeed_description_color: #828282;
 $checkspeed_input_bg_color: #dfdfdf;
 $checkspeed_input_text_color: #b6b6b6;
-$checkspeed_button_text_color: #fad725;
-$checkspeed_button_bg_color: #212528;
+$checkspeed_button_text_color: #212528;
+$checkspeed_button_bg_color: #fad725;
 
 // Pricing
 $pricing_heading_color: #212528;
@@ -628,6 +628,44 @@ nav {
   }
 }
 
+#checkspeed {
+  .checkspeed-content {
+    order: 2;
+    .checkspeed-heading {
+      color: $checkspeed_heading_black_color;
+      span {
+        color: $checkspeed_heading_purple_color;
+      }
+    }
+    .checkspeed-description {
+      color: $checkspeed_description_color;
+      font-size: min(4.5vw, 0.93rem);
+    }
+    form {
+      max-width: 25rem;
+      .input-div {
+        input {
+          border-radius: 4px;
+          color: $checkspeed_input_text_color;
+          background: $checkspeed_input_bg_color;
+          font-size: min(3.6vw, 0.9rem);
+          border: none;
+        }
+      }
+      button {
+        font-size: min(3.2vw, 0.8rem);
+        border: none;
+        background: $checkspeed_button_bg_color;
+        color: $checkspeed_button_text_color;
+        border-radius: 4px;
+      }
+    }
+  }
+  .checkspeed-image {
+    order: 1;
+  }
+}
+
 // Media Queries
 @media (min-width: 768px) {
   #hero {
@@ -791,6 +829,35 @@ nav {
           background: $aboutus_number_yellow_dot_color;
         }
       }
+    }
+  }
+  #checkspeed {
+    .checkspeed-content {
+      order: unset;
+      .checkspeed-heading {
+        // font-size: min(3vw, 1.5rem);
+      }
+      .checkspeed-description {
+        font-size: min(1.8vw, 0.85rem);
+      }
+      form {
+        max-width: 100%;
+        .input-div {
+          overflow: hidden;
+          input {
+            border-right: 0.1px solid $checkspeed_input_text_color;
+            border-radius: 4px 0 0 4px;
+            &:last-of-type {
+              border-right: none;
+              border-left: 0.1px solid $checkspeed_input_text_color;
+              border-radius: 0 4px 4px 0;
+            }
+          }
+        }
+      }
+    }
+    .checkspeed-image {
+      order: unset;
     }
   }
 }
@@ -962,6 +1029,24 @@ nav {
               p {
                 font-size: min(1.1vw, 1.1rem);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  #checkspeed {
+    .checkspeed-content {
+      .checkspeed-heading {
+        // font-size: min(3vw, 1.5rem);
+      }
+      .checkspeed-description {
+        font-size: min(4.5vw, 0.93rem);
+      }
+      form {
+        .input-div {
+          input {
+            &:last-of-type {
             }
           }
         }
