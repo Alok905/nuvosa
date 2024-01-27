@@ -794,8 +794,7 @@ nav {
   .members-card-container {
     .members-card {
       aspect-ratio: 7/4;
-      // max-width: 25rem;
-      max-width: 400px;
+      max-width: 25rem;
       .members-card-body {
         border: 1px solid $members_card_border_color;
 
