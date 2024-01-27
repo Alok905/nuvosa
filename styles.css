@@ -206,6 +206,7 @@ nav div #navbarSupportedContent form button img {
   font-size: min(3.2vw, 1rem);
 }
 #projects .project-card .project-card-body a {
+  width: 4.5%;
   aspect-ratio: 1/1;
   margin-right: 5%;
 }
