@@ -142,6 +142,7 @@ $copyright_border_color: #eae5e5;
   outline: none;
   font-family: $font_poppins;
   user-select: none;
+  transition: all 0.2s ease;
 }
 body {
   font-size: 62.5%;
