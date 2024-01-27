@@ -554,6 +554,31 @@ nav div #navbarSupportedContent form button img {
   display: block;
 }
 
+#contact .contact-container .contact-heading {
+  color: #212528;
+}
+#contact .contact-container .contact-description {
+  color: #909090;
+  font-size: min(4.5vw, 0.93rem);
+}
+#contact .contact-container form {
+  max-width: 25rem;
+}
+#contact .contact-container form input {
+  border: 1px solid #d0c3c9;
+  color: #727272;
+}
+#contact .contact-container form input,
+#contact .contact-container form button {
+  font-size: min(4.5vw, 0.9rem);
+  border-radius: 3px;
+}
+#contact .contact-container form button {
+  border: none;
+  background: #6f77f1;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   #hero > .row .hero-image {
     order: unset;
@@ -707,6 +732,31 @@ nav div #navbarSupportedContent form button img {
   }
   #checkspeed .checkspeed-image {
     order: unset;
+  }
+  #contact .contact-container {
+    width: 90%;
+    border: 1px solid #300808;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  #contact .contact-container .contact-description {
+    font-size: min(4vw, 0.9rem);
+  }
+  #contact .contact-container form {
+    max-width: unset;
+  }
+  #contact .contact-container form input {
+    flex-grow: 1 !important;
+    max-width: 38% !important;
+  }
+  #contact .contact-container form input,
+  #contact .contact-container form button {
+    font-size: min(2vw, 1rem);
+  }
+  #contact .contact-container form button {
+    width: 20% !important;
+    max-width: 10rem !important;
   }
 }
 @media (min-width: 992px) {
@@ -876,5 +926,18 @@ nav div #navbarSupportedContent form button img {
   }
   #pricing .pricing-card-container .pricing-card .pricing-card-body:hover {
     transform: scale(1.08);
+  }
+  #contact .contact-container {
+    padding: 5rem;
+  }
+  #contact .contact-container .contact-description {
+    font-size: min(4.5vw, 0.93rem);
+  }
+  #contact .contact-container form input {
+    max-width: 39% !important;
+  }
+  #contact .contact-container form input,
+  #contact .contact-container form button {
+    font-size: min(2vw, 1.4rem);
   }
 }/*# sourceMappingURL=styles.css.map */

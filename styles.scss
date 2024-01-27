@@ -108,6 +108,8 @@ $clients_card_name_color: #212528;
 $clients_card_name_description_color: #828282;
 
 //Contact Us
+$contact_bg_color: #fafafa;
+$contact_border_color: #300808;
 $contact_heading_color: #212528;
 $contact_description_color: #909090;
 $contact_input_text_color: #727272;
@@ -736,6 +738,37 @@ nav {
     }
   }
 }
+
+// Contact Us
+#contact {
+  .contact-container {
+    .contact-heading {
+      color: $contact_heading_color;
+    }
+    .contact-description {
+      color: $contact_description_color;
+      font-size: min(4.5vw, 0.93rem);
+    }
+    form {
+      max-width: 25rem;
+      input {
+        border: 1px solid $contact_input_border_color;
+        color: $contact_input_text_color;
+      }
+      input,
+      button {
+        font-size: min(4.5vw, 0.9rem);
+        border-radius: 3px;
+      }
+      button {
+        border: none;
+        background: $contact_button_bg_color;
+        color: #fff;
+      }
+    }
+  }
+}
+
 // Media Queries
 @media (min-width: 768px) {
   #hero {
@@ -927,6 +960,34 @@ nav {
       order: unset;
     }
   }
+  #contact {
+    .contact-container {
+      width: 90%;
+      border: 1px solid $contact_border_color;
+      background: $contact_bg_color;
+      border-radius: 10px;
+      padding: 2rem;
+
+      .contact-description {
+        font-size: min(4vw, 0.9rem);
+      }
+      form {
+        max-width: unset;
+        input {
+          flex-grow: 1 !important;
+          max-width: 38% !important;
+        }
+        input,
+        button {
+          font-size: min(2vw, 1rem);
+        }
+        button {
+          width: 20% !important;
+          max-width: 10rem !important;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 992px) {
   nav div {
@@ -1105,7 +1166,6 @@ nav {
   #checkspeed .checkspeed-content .checkspeed-description {
     font-size: min(4.5vw, 0.93rem);
   }
-
   #pricing {
     background: $pricing_bg_color;
     .pricing-heading {
@@ -1147,6 +1207,24 @@ nav {
           &:hover {
             transform: scale(1.08);
           }
+        }
+      }
+    }
+  }
+  #contact {
+    .contact-container {
+      padding: 5rem;
+
+      .contact-description {
+        font-size: min(4.5vw, 0.93rem);
+      }
+      form {
+        input {
+          max-width: 39% !important;
+        }
+        input,
+        button {
+          font-size: min(2vw, 1.4rem);
         }
       }
     }
