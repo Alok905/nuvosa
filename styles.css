@@ -598,7 +598,7 @@ nav div #navbarSupportedContent form button img {
 }
 #members .members-card-container .members-card {
   aspect-ratio: 5/3;
-  max-width: 23rem;
+  max-width: 25rem;
 }
 #members .members-card-container .members-card .members-card-body {
   border: 1px solid #efefef;
