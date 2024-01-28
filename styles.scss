@@ -129,7 +129,7 @@ $contact_button_text_color: #fff;
 
 // Footer
 $footer_heading_logo_color: #212528;
-$footer_heading_link_color: #212528;
+$footer_link_color: #212528;
 
 //copyright
 $copyright_text_color: #828282;
@@ -160,19 +160,22 @@ body {
 @mixin sectionDescriptionFontLarge {
   font-size: min(4.5vw, 0.93rem);
 }
+@mixin logoDot {
+  transform: translateY(-20%);
+  right: -10px;
+  height: 8px;
+  width: 8px;
+  border: 1px solid $nav_text_color;
+  background: $logo_dot_color;
+}
 // Nav
 nav {
   height: 4rem;
   div {
     min-width: unset;
-    > a {
+    .navbar-brand {
       span {
-        transform: translateY(-20%);
-        right: -10px;
-        height: 8px;
-        width: 8px;
-        border: 1px solid $nav_text_color;
-        background: $logo_dot_color;
+        @include logoDot();
       }
     }
     #navbarSupportedContent {
@@ -834,6 +837,35 @@ nav {
   }
 }
 
+footer {
+  .navbar-brand span {
+    @include logoDot();
+  }
+  hr {
+    background: $copyright_border_color;
+  }
+  .footer-links-container {
+    max-width: 22rem;
+    a {
+      color: $footer_link_color;
+      font-size: min(4vw, 0.9rem);
+      &:hover {
+        color: $hero_text_purple_color;
+      }
+    }
+    @media (min-width: 576px) {
+      max-width: unset;
+    }
+  }
+  .copyright-container {
+    span,
+    .copyright-links-container a {
+      font-size: min(3vw, 11px);
+      color: $copyright_text_color;
+    }
+  }
+}
+
 // Media Queries
 @media (min-width: 576px) {
   #members {
@@ -1086,6 +1118,12 @@ nav {
       }
     }
   }
+  .copyright-container {
+    span,
+    .copyright-links-container a {
+      font-size: 11px;
+    }
+  }
 }
 @media (min-width: 992px) {
   nav div {
@@ -1325,6 +1363,12 @@ nav {
           font-size: min(2vw, 1.1rem);
         }
       }
+    }
+  }
+  .copyright-container {
+    span,
+    .copyright-links-container a {
+      font-size: 13px;
     }
   }
 }

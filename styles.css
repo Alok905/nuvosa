@@ -22,7 +22,7 @@ nav {
 nav div {
   min-width: unset;
 }
-nav div > a span {
+nav div .navbar-brand span {
   transform: translateY(-20%);
   right: -10px;
   height: 8px;
@@ -629,6 +629,38 @@ nav div #navbarSupportedContent form button img {
   fill: #6f77f1;
 }
 
+footer .navbar-brand span {
+  transform: translateY(-20%);
+  right: -10px;
+  height: 8px;
+  width: 8px;
+  border: 1px solid #212528;
+  background: #bc424e;
+}
+footer hr {
+  background: #eae5e5;
+}
+footer .footer-links-container {
+  max-width: 22rem;
+}
+footer .footer-links-container a {
+  color: #212528;
+  font-size: min(4vw, 0.9rem);
+}
+footer .footer-links-container a:hover {
+  color: #6f77f1;
+}
+@media (min-width: 576px) {
+  footer .footer-links-container {
+    max-width: unset;
+  }
+}
+footer .copyright-container span,
+footer .copyright-container .copyright-links-container a {
+  font-size: min(3vw, 11px);
+  color: #828282;
+}
+
 @media (min-width: 576px) {
   #members .members-card-container .members-card {
     max-width: unset;
@@ -834,6 +866,10 @@ nav div #navbarSupportedContent form button img {
     width: 20% !important;
     max-width: 10rem !important;
   }
+  .copyright-container span,
+  .copyright-container .copyright-links-container a {
+    font-size: 11px;
+  }
 }
 @media (min-width: 992px) {
   nav div {
@@ -1015,5 +1051,9 @@ nav div #navbarSupportedContent form button img {
   #contact .contact-container form input,
   #contact .contact-container form button {
     font-size: min(2vw, 1.1rem);
+  }
+  .copyright-container span,
+  .copyright-container .copyright-links-container a {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=styles.css.map */
